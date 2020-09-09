@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under-Theories</title>
+    <link rel="stylesheet" href="detailstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/UT Watermark press.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu black.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <!--single product details-->
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/Escape from Earth/Escape from Earth.png" width="100%" id="ProductImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/Escape from Earth/Escape from Earth.png" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/Escape from Earth/Escape from Earth Back.png" width="100%" class="small-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <p>Products / First Year</p>
+                    <h1>Escape From The Earth T-Shirt</h1>
+                    <small>*This product is for showcase only, cannot be purchased.</small>
+                    <select>
+                        <option>Select Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>L</option>
+                        <option>M</option>
+                        <option>S</option>
+                    </select>
+                    <h3><i class="fa fa-indent"></i> Product Details </h3>
+                    <p>The Escape from Earth T-Shirt is based on the Earth's orbital theory, which uses the escape from earth formula to launch a rocket out of Earth's atmosphere.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--title-->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <a href="products.html"><p>View more</p></a>
+            </div>
+        </div>
+
+    <!--products-->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/Wormhole/Schwarzschild Wormhole.png">
+                <h4>Schwarzschild Wormhole<br> T-Shirt</h4>
+            </div>
+            <div class="col-4">
+                <img src="images/The Man Who Knows Infinity/The Man Who Knows Infinity.png">
+                <h4>The Man Who Knows Infinity<br> T-Shirt</h4>
+                <p>Special Edition 2020</p>
+            </div>
+            <div class="col-4">
+                <img src="images/The Man Who Knows Infinity/Infinity Theory.png">
+                <h4>Infinity Theory<br> T-Shirt</h4>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and IOS Mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/playstore.png">
+                        <img src="images/appstore.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/UT Watermark black.png" alt="">
+                    <p>Our Goal is to Support the World's Scientists and Physicists to keep Exploring the Universe.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Promos</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Shipping Methode</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &#169; 2020 Under-Theories</p>
+        </div>
+    </div>
+    <!--js for toggle-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+<!--js for product gallery-->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+</script>
+
+</body>
+</html>
